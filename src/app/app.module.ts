@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
     CommonModule,
     BrowserAnimationsModule, // required animations module
     NgxSpinnerModule,
+    MatSliderModule,
+    MatButtonModule,
     ToastrModule.forRoot({
       timeOut:2000,
       progressBar:true,
