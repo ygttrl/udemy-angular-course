@@ -509,7 +509,7 @@
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * --> 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
@@ -518,17 +518,32 @@
 <section>
   <div class="example-label">Basic</div>
   <div class="example-button-row">
-    <button mat-button>Basic</button>
+    <!-- <button mat-button>Basic</button>
     <button mat-button color="primary">Primary</button>
     <button mat-button color="accent">Accent</button>
     <button mat-button color="warn">Warn</button>
-    <button mat-button disabled>Disabled</button>
+    <button mat-button disabled>Disabled</button> -->
     <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+
   </div>
 </section>
 
 
+<div class="row">
+  <div class="col-md-3">
+    <a mat-button routerLink="home" >go to Home</a>
+  </div>
+  <div class="col-md-3">
+    <a mat-button routerLink="role" >go to Role</a>
+  </div>
+  <div class="col-md-3">
+    <a mat-button routerLink="user">go to User</a>
+  </div>
+  <div class="col-md-3">
+    <a mat-button [routerLink]="['user',7]">go to user 7 detail</a>
+  </div>
+</div>
 
 
-<ngx-spinner></ngx-spinner>
 <router-outlet></router-outlet>
+<ngx-spinner></ngx-spinner>
