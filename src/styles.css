@@ -2,6 +2,7 @@
 @import "../node_modules//bootstrap/dist/css/bootstrap-reboot.min.css";
 @import "../node_modules//bootstrap/dist/css/bootstrap-grid.min.css";
 @import "./assets/styles/_toastr.scss";
+@import "./assets/styles/variables.scss";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
