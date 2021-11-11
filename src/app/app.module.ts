@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 //import { UserComponent } from './user/user.component';
 import { RoleComponent } from './role/role.component';
+import { UserComponent } from './user/user/user.component';
 //import { UserDetailComponent } from './user/user-detail/user-detail.component';
 
 @NgModule({
@@ -25,7 +26,7 @@ import { RoleComponent } from './role/role.component';
     BrowserAnimationsModule, // required animations module
     NgxSpinnerModule,
     MatSliderModule,
-    MatButtonModule,
+    //MatButtonModule,
     ToastrModule.forRoot({
       timeOut:2000,
       progressBar:true,

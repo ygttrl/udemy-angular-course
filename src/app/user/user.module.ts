@@ -5,6 +5,7 @@ import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserRoleComponent } from './user/user-role/user-role.component';
 import { RouterModule, Routes } from '@angular/router';
+import {MatButtonModule} from '@angular/material/button';
 
 const routes: Routes = [
   {
@@ -40,6 +41,7 @@ const routes: Routes = [
     UserRoleComponent
   ],
   imports: [
+    MatButtonModule,
     CommonModule,RouterModule.forChild(routes)
   ]
 })
