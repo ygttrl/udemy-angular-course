@@ -1,0 +1,33 @@
+<!-- <mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+  <mat-drawer-content>Main content</mat-drawer-content>
+</mat-drawer-container> -->
+
+
+
+<mat-drawer-container class="example-container">
+  <mat-drawer-content>Side Bar
+  <ul>
+    <li routerLink="home">
+        Home
+    </li>
+    <li routerLink="role">
+        Role
+    </li>
+    <li routerLink="user">
+       User
+    </li>
+    <li routerLink="data-binding">
+      Data Binding
+   </li>
+    <ul>
+      <li [routerLink]="['user',7]">
+        User 7
+      </li>
+      <li [routerLink]="['user',7,'role']">
+        User 7 Role
+      </li>
+    </ul>
+  </ul>
+</mat-drawer-content>
+</mat-drawer-container>
