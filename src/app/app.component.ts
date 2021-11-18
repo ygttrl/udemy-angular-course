@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.showSuccess();
-    this.showSnipper();
+    //this.showSnipper();
   }
 
   showSuccess(){
