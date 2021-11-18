@@ -16,11 +16,20 @@ export class DataBindingComponent implements OnInit {
     isEditable:false
   }
 
+  type="text";
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  buttonClicked()
+  {
+     alert('Clicked!');
+  }
 
+  inputSubmit(value:any){
+    alert(value.target.value+" geldi!!...");
+
+  }
 
 }
