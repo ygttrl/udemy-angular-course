@@ -20,6 +20,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatIconModule } from "@angular/material/icon";
 import { MatSidenavModule  } from "@angular/material/sidenav";
 
+import { CookieService } from 'ngx-cookie-service';//ngx Cookie serves
+
+import{registerLocaleData} from '@angular/common';
+import localTr from '@angular/common/locales/tr';
+import localTrExtra from '@angular/common/locales/extra/tr';
+
+registerLocaleData(localTr,"tr-TR",localTrExtra);
 
 @NgModule({
   declarations: [
@@ -52,7 +59,7 @@ import { MatSidenavModule  } from "@angular/material/sidenav";
     }),
 
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

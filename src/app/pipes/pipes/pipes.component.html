@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-md-2">
+      <h3>lowercase</h3>
+      <p>normal: {{title}}</p>
+      <p>lowerCase: {{title | lowercase}}</p>
+  </div>
+
+  <div class="col-md-2">
+    <h3>titlecase</h3>
+    <p>normal: {{title}}</p>
+    <p>titlecase: {{title | titlecase}}</p>
+  </div>
+
+<div class="col-md-2">
+  <h3>uppercase</h3>
+  <p>normal: {{title}}</p>
+  <p>uppercase: {{title | uppercase}}</p>
+  <p>turkish uppercase: {{turkishUpperCaseVal | uppercase}}</p>
+</div>
+
+<div class="col-md-4">
+  <p>normal date: {{today | date:"short"}}</p>
+  <p>full date: {{today | date:"fullDate"}}</p>
+  <p>pipe date: {{today | date:"fullDate":"":"tr-Tr"}}</p>
+</div>
+
+<div class="col-md-2">
+  <h3>Currency Pipe</h3>>
+  <p>normal pipe value : {{cashValue}} </p>
+  <p>currency pipe value : {{cashValue | currency}} </p>
+  <p>currency pipe value : {{cashValue | currency : "EUR"}} </p>
+  <p>currency pipe value : {{cashValue | currency : "TRY":"symbol":"1.2-2":"tr-TR"}} </p>
+</div>
+
+<div class="col-md-2">
+  <h3>json Pipe</h3>
+   <p>Without pipe: {{oobjectVal}}</p>
+   <p>With pipe: {{oobjectVal | json}}</p>
+</div>
+
+<div class="col-md-2">
+  <h3>percent Pipe</h3>
+  <p>percent pipe: {{percentValue | percent}}</p>
+  <p>percent pipe: {{percentValue | percent:"":"tr-TR"}}</p>
+</div>
+
+<div class="col-md-2">
+  <h3>Slice Pipe</h3>
+  <p>Slice pipe: {{cityValue}}</p>
+  <p>Slice pipe: {{cityValue | slice:0:3}}</p>
+  <p>Slice & uppercase pipe: {{cityValue | uppercase | slice:0:3}}</p>
+  <p>Slice pipe: {{cityValue | slice:-2}}</p>
+  <p>Slice pipe: {{cityValue | slice:-4:-2}}</p>
+</div>
+
+<div class="col-md-2">
+  <h3>Custom Pipe</h3>
+  <p>{{cash | tl }}</p>
+  <br>
+  <h4>Cities</h4>
+  <ul>
+    <li *ngFor="let city of cities">{{city}}</li>
+  </ul>
+</div>
+
+</div>
+
+

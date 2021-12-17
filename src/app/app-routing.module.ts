@@ -17,13 +17,25 @@ const routes: Routes = [{
   loadChildren:() => import('./data-binding/data-binding.module').then(m => m.DataBindingModule)
 },
 {
+  path:"storage",
+  loadChildren:() => import('./storage/storage.module').then(m => m.StorageModule)
+},
+{
   path:"role",
   component:RoleComponent,
 },
 {
-  path:"**", //Eğer aranan şekilde bir url yoksa(component) Home sayfsına(Home Component)
-  component:HomeComponent,
+  path:"Directives", //Eğer aranan şekilde bir url yoksa(component) Home sayfsına(Home Component)
+  loadChildren:() => import('./directives/directives.module').then(m => m.DirectivesModule)
 },
+{
+  path:"pipes", //Eğer aranan şekilde bir url yoksa(component) Home sayfsına(Home Component)
+  loadChildren:() => import('./pipes/pipes.module').then(m => m.PipesModule)
+},
+{
+  path:"**", //Eğer aranan şekilde bir url yoksa(component) Home sayfsına(Home Component)
+  loadChildren:() => import('./home/home.module').then(m => m.HomeModule)
+}
 ];
 
 @NgModule({
