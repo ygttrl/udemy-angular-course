@@ -59,7 +59,7 @@
   <br>
   <h4>Cities</h4>
   <ul>
-    <li *ngFor="let city of cities">{{city}}</li>
+    <li *ngFor="let city of cities | myFiltering: 'i'">{{city}}</li>
   </ul>
 </div>
 

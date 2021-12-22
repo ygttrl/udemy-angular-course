@@ -5,8 +5,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MyFilteringPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: string[], ...args: string[]): string[] {
+    let result : any[]=[];
+    value.forEach(element => {
+        const isExistLetter =element.includes(args[0].toString());
+        if(isExistLetter){
+          result.push(element);
+        }
+    });
+    return result;
   }
 
 }

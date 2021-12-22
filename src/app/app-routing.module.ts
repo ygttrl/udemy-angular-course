@@ -33,6 +33,10 @@ const routes: Routes = [{
   loadChildren:() => import('./pipes/pipes.module').then(m => m.PipesModule)
 },
 {
+  path:"parents", //Eğer aranan şekilde bir url yoksa(component) Home sayfsına(Home Component)
+  loadChildren:() => import('./parents/parents.module').then(m => m.ParentsModule)
+},
+{
   path:"**", //Eğer aranan şekilde bir url yoksa(component) Home sayfsına(Home Component)
   loadChildren:() => import('./home/home.module').then(m => m.HomeModule)
 }

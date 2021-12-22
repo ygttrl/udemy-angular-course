@@ -1,0 +1,13 @@
+<p>child1 component!</p>
+
+
+
+
+<div *ngIf="data">
+  {{data?.name}} Kişisi
+  <p *ngIf="data?.status">Başarılı</p>
+  <p *ngIf="!data?.status">Başarısız</p>
+</div>
+
+
+<button  (click)="emitForm($event)">RESET !</button>
